@@ -17,7 +17,7 @@
 
 <!-- tocstop -->
 
-CakePHP Sample App on OpenShift
+CakePHP Sample App on OpenShift edited by JE
 ===============================
 # JE NEW name
 ######
