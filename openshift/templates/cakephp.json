@@ -2,23 +2,23 @@
   "kind": "Template",
   "apiVersion": "v1",
   "metadata": {
-    "name": "cakephp-example",
+    "name": "cakephp-example-je",
     "annotations": {
       "openshift.io/display-name": "CakePHP",
-      "description": "An example CakePHP application with no database. For more information about using this template, including OpenShift considerations, see https://github.com/sclorg/cakephp-ex/blob/master/README.md.",
+      "description": "An example CakePHP application with no database. For more information about using this template, including OpenShift considerations, see https://github.com/jekelundh/cakephp-je/blob/master/README.md.",
       "tags": "quickstart,php,cakephp",
       "iconClass": "icon-php",
       "openshift.io/long-description": "This template defines resources needed to develop a CakePHP application, including a build configuration and application deployment configuration.  It does not include a database.",
       "openshift.io/provider-display-name": "Red Hat, Inc.",
-      "openshift.io/documentation-url": "https://github.com/sclorg/cakephp-ex",
+      "openshift.io/documentation-url": "https://github.com/jekelundh/cakephp-je",
       "openshift.io/support-url": "https://access.redhat.com",
       "template.openshift.io/bindable": "false"
     }
   },
-  "message": "The following service(s) have been created in your project: ${NAME}.\n\nFor more information about using this template, including OpenShift considerations, see https://github.com/sclorg/cakephp-ex/blob/master/README.md.",
+  "message": "The following service(s) have been created in your project: ${NAME}.\n\nFor more information about using this template, including OpenShift considerations, see https://github.com/jekelundh/cakephp-je/blob/master/README.md.",
   "labels": {
-      "template": "cakephp-example",
-      "app": "cakephp-example"
+      "template": "cakephp-example-je",
+      "app": "cakephp-example-je"
   },
   "objects": [
     {
@@ -158,7 +158,7 @@
             "imageChangeParams": {
               "automatic": true,
               "containerNames": [
-                "cakephp-example"
+                "cakephp-example-je"
               ],
               "from": {
                 "kind": "ImageStreamTag",
@@ -184,7 +184,7 @@
           "spec": {
             "containers": [
               {
-                "name": "cakephp-example",
+                "name": "cakephp-example-je",
                 "image": " ",
                 "ports": [
                   {
@@ -251,7 +251,7 @@
       "displayName": "Name",
       "description": "The name assigned to all of the frontend objects defined in this template.",
       "required": true,
-      "value": "cakephp-example"
+      "value": "cakephp-example-je"
     },
     {
       "name": "NAMESPACE",
@@ -279,7 +279,7 @@
       "displayName": "Git Repository URL",
       "description": "The URL of the repository with your application source code.",
       "required": true,
-      "value": "https://github.com/sclorg/cakephp-ex.git"
+      "value": "https://github.com/jekelundh/cakephp-je.git"
     },
     {
       "name": "SOURCE_REPOSITORY_REF",
